@@ -9,11 +9,10 @@
 <title>Login Page</title>
 
 <link rel="stylesheet" href="${pageContext.request.contextPath}/public/myStyle.css"/>
-
 </head>
 <body>
 
-<form:form method="POST" action="${pageContext.request.contextPath}/authenticateTheUser">
+<form method="POST" action="${pageContext.request.contextPath}/authenticateTheUser">
 	
 	<c:if test="${param.error != null}">
 		<i class="failed">Bad Credentials !</i>
@@ -28,8 +27,12 @@
 		<input type="password" name="password"/>
 	</div>
 	<button type="submit"> Submit </button>
+	
+	<!-- Let's manually add csrf token without using form tag -->
+	
+	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
 
-</form:form>
+</form>
 
 </body>
 </html>

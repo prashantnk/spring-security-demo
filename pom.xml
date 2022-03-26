@@ -31,8 +31,12 @@
 		    <version>${springsecurity.version}</version>
 		</dependency>
 
-
-
+		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-taglibs -->
+		<dependency>
+		    <groupId>org.springframework.security</groupId>
+		    <artifactId>spring-security-taglibs</artifactId>
+		    <version>${springsecurity.version}</version>
+		</dependency>
 
 		<!-- Spring MVC support -->
 		<dependency>
