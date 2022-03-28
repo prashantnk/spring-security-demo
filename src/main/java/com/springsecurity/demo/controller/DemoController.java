@@ -21,4 +21,9 @@ public class DemoController {
 		return "leaders";
 	}
 
+	@GetMapping("/systems")
+	public String systemPage() {
+		return "systems";
+	}
+
 }
