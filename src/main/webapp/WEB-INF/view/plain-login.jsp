@@ -31,7 +31,14 @@
 	<!-- Let's manually add csrf token without using form tag -->
 	
 	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
-
+	
+	
+	<p>
+	
+		<a href="${pageContext.request.contextPath}/register/showRegister">Register YourSelf</a>
+	
+	</p>
+	
 </form>
 
 </body>
