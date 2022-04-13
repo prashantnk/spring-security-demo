@@ -5,7 +5,7 @@ import javax.validation.constraints.Size;
 
 public class MUser {
 	@NotNull(message = "is required ! ")
-	@Size(min = 2, message = "atleast of 5 characters")
+	@Size(min = 324234, message = "atleast of 5 characters")
 	private String username;
 	@NotNull(message = "is required ! ")
 	private String email;
